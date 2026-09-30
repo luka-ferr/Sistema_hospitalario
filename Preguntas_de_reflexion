@@ -1,0 +1,40 @@
+
+¿Por qué separar acceso a datos?
+Porque permite separar la lógica del sistema de la forma en que se almacenan 
+y consultan los datos. Por ejemplo, usando el patrón Repository, 
+el sistema puede trabajar con pacientes sin necesitar saber si estos se almacenan en:
+
+una lista en memoria,
+una base de datos,
+un archivo,
+
+Esto facilita cambiar la tecnología de almacenamiento sin modificar el resto del sistema.
+----------------------------------------------------------------------------------------------
+
+• ¿Qué problema resuelve Adapter?
+Adapter funciona como un intermediario que permite que dos sistemas 
+con interfaces diferentes puedan comunicarse sin tener que modificar ninguno de los dos.
+-------------------------------------------------------------------------------------------
+
+• ¿Cómo evitar acoplamiento entre módulos?
+Se puede evitar utilizando abstracciones e interfaces, 
+de manera que un módulo dependa de un contrato y no directamente 
+de una implementación concreta.
+-------------------------------------------------------------------------
+
+• ¿Qué patrón mejora claridad arquitectónica?
+En tu proyecto, Repository ayuda bastante a mejorar 
+la claridad arquitectónica porque separa claramente:
+--------------------------------------------------------------------------
+
+• ¿Cómo facilitar auditorías y mantenimiento?
+Mediante la separación de responsabilidades y el uso de patrones de diseño.
+
+Cada componente tiene una función específica, por lo que resulta más fácil:
+
+localizar errores
+modificar una parte sin afectar todo el sistema
+realizar pruebas
+revisar el funcionamiento de cada módulo
+cambiar implementaciones
+identificar dónde se realizan determinadas operacion
